@@ -21,7 +21,7 @@ namespace WeatherApp
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            SetInterface();
+            SetInterface("Wroclaw");
         }
 
         private Weather GetWeatherFromApi(string city)
@@ -31,7 +31,7 @@ namespace WeatherApp
             string url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22" + city +"%22)%20and%20u%20=%20%27c%27%20&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
             var obj = JsonConvert.DeserializeObject<dynamic>(client.DownloadString(url));
 
-            weather.City = city;
+            weather.City = obj.query.results.channel.location.city;
             weather.TemperatureDay = obj.query.results.channel.item.forecast[0].high;
             weather.TemperatureNight = obj.query.results.channel.item.forecast[0].low;
             weather.Code = obj.query.results.channel.item.forecast[0].code;
@@ -48,11 +48,16 @@ namespace WeatherApp
             return weather;
         }
 
-        private void SetInterface()
+        private void SetInterface(string city)
         {
-            GetWeatherFromApi("Wrocław");
-
+            var weather = GetWeatherFromApi(city);
+            labelCity.Text = weather.City;
+            labelTemperature.Text = weather.TemperatureDay.ToString() + "'C";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SetInterface(textBox1.Text);
+        }
     }
 }
