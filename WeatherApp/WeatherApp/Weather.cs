@@ -10,11 +10,11 @@ namespace WeatherApp
     {
         public string City { get; set; }
 
-        public string TemperatureDay { get; set; }
-
-        public int TemperatureNight { get; set; }
+        public int TemperatureCurrent { get; set; }
 
         public int Code { get; set; }
+
+        public DateTime date { get; set; }
 
         public List<Forecast> Forecast;
 

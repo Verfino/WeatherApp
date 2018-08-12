@@ -32,8 +32,7 @@ namespace WeatherApp
             var obj = JsonConvert.DeserializeObject<dynamic>(client.DownloadString(url));
 
             weather.City = obj.query.results.channel.location.city;
-            weather.TemperatureDay = obj.query.results.channel.item.forecast[0].high;
-            weather.TemperatureNight = obj.query.results.channel.item.forecast[0].low;
+            weather.TemperatureCurrent = obj.query.results.channel.item.condition.temp;
             weather.Code = obj.query.results.channel.item.forecast[0].code;
 
             foreach (var item in obj.query.results.channel.item.forecast)
@@ -52,7 +51,11 @@ namespace WeatherApp
         {
             var weather = GetWeatherFromApi(city);
             labelCity.Text = weather.City;
-            labelTemperature.Text = weather.TemperatureDay.ToString() + "'C";
+            labelTemperature.Text = weather.TemperatureCurrent.ToString() + "'C";
+            labelTodayTempDay.Text = weather.Forecast[0].TemperatureDay.ToString() + "'C";
+            labelTodayTempNight.Text = weather.Forecast[0].TemperatureNight.ToString() + "'C";
+            labelTomorrowTempDay.Text = weather.Forecast[1].TemperatureDay.ToString() + "'C";
+            labelTomorrowTempNight.Text = weather.Forecast[1].TemperatureNight.ToString() + "'C";
         }
 
         private void button1_Click(object sender, EventArgs e)
