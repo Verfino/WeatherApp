@@ -38,20 +38,29 @@
             this.labelTodayNight = new System.Windows.Forms.Label();
             this.labelTodayTempNight = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
+            this.label3DaysTempDay = new System.Windows.Forms.Label();
+            this.label3DaysTempNight = new System.Windows.Forms.Label();
+            this.label2DaysTempDay = new System.Windows.Forms.Label();
+            this.label2DaysTempNight = new System.Windows.Forms.Label();
+            this.label3DaysNight = new System.Windows.Forms.Label();
+            this.label3DaysDay = new System.Windows.Forms.Label();
+            this.label2DaysNight = new System.Windows.Forms.Label();
+            this.label2DaysDay = new System.Windows.Forms.Label();
+            this.labelTomorrowTempDay = new System.Windows.Forms.Label();
+            this.labelTomorrowNight = new System.Windows.Forms.Label();
+            this.label3Days = new System.Windows.Forms.Label();
+            this.label2Days = new System.Windows.Forms.Label();
+            this.labelTomorrow = new System.Windows.Forms.Label();
             this.labelTomorrowTempNight = new System.Windows.Forms.Label();
             this.labelTomorrowDay = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.labelTomorrow = new System.Windows.Forms.Label();
-            this.label2Days = new System.Windows.Forms.Label();
-            this.label3Days = new System.Windows.Forms.Label();
-            this.labelTomorrowNight = new System.Windows.Forms.Label();
+            this.buttonCheck = new System.Windows.Forms.Button();
             this.labelTodayTempDay = new System.Windows.Forms.Label();
             this.labelTodayDay = new System.Windows.Forms.Label();
-            this.labelTomorrowTempDay = new System.Windows.Forms.Label();
+            this.labelDate = new System.Windows.Forms.Label();
             this.menuStripFile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeather)).BeginInit();
             this.panel.SuspendLayout();
@@ -140,6 +149,14 @@
             // panel
             // 
             this.panel.BackColor = System.Drawing.Color.Transparent;
+            this.panel.Controls.Add(this.label3DaysTempDay);
+            this.panel.Controls.Add(this.label3DaysTempNight);
+            this.panel.Controls.Add(this.label2DaysTempDay);
+            this.panel.Controls.Add(this.label2DaysTempNight);
+            this.panel.Controls.Add(this.label3DaysNight);
+            this.panel.Controls.Add(this.label3DaysDay);
+            this.panel.Controls.Add(this.label2DaysNight);
+            this.panel.Controls.Add(this.label2DaysDay);
             this.panel.Controls.Add(this.labelTomorrowTempDay);
             this.panel.Controls.Add(this.labelTomorrowNight);
             this.panel.Controls.Add(this.label3Days);
@@ -154,6 +171,146 @@
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(510, 269);
             this.panel.TabIndex = 7;
+            // 
+            // label3DaysTempDay
+            // 
+            this.label3DaysTempDay.AutoSize = true;
+            this.label3DaysTempDay.BackColor = System.Drawing.Color.Transparent;
+            this.label3DaysTempDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3DaysTempDay.Location = new System.Drawing.Point(220, 193);
+            this.label3DaysTempDay.Name = "label3DaysTempDay";
+            this.label3DaysTempDay.Size = new System.Drawing.Size(27, 16);
+            this.label3DaysTempDay.TabIndex = 29;
+            this.label3DaysTempDay.Text = "0\'C";
+            // 
+            // label3DaysTempNight
+            // 
+            this.label3DaysTempNight.AutoSize = true;
+            this.label3DaysTempNight.BackColor = System.Drawing.Color.Transparent;
+            this.label3DaysTempNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3DaysTempNight.Location = new System.Drawing.Point(220, 215);
+            this.label3DaysTempNight.Name = "label3DaysTempNight";
+            this.label3DaysTempNight.Size = new System.Drawing.Size(27, 16);
+            this.label3DaysTempNight.TabIndex = 28;
+            this.label3DaysTempNight.Text = "0\'C";
+            // 
+            // label2DaysTempDay
+            // 
+            this.label2DaysTempDay.AutoSize = true;
+            this.label2DaysTempDay.BackColor = System.Drawing.Color.Transparent;
+            this.label2DaysTempDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2DaysTempDay.Location = new System.Drawing.Point(220, 102);
+            this.label2DaysTempDay.Name = "label2DaysTempDay";
+            this.label2DaysTempDay.Size = new System.Drawing.Size(27, 16);
+            this.label2DaysTempDay.TabIndex = 27;
+            this.label2DaysTempDay.Text = "0\'C";
+            // 
+            // label2DaysTempNight
+            // 
+            this.label2DaysTempNight.AutoSize = true;
+            this.label2DaysTempNight.BackColor = System.Drawing.Color.Transparent;
+            this.label2DaysTempNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2DaysTempNight.Location = new System.Drawing.Point(220, 125);
+            this.label2DaysTempNight.Name = "label2DaysTempNight";
+            this.label2DaysTempNight.Size = new System.Drawing.Size(27, 16);
+            this.label2DaysTempNight.TabIndex = 26;
+            this.label2DaysTempNight.Text = "0\'C";
+            // 
+            // label3DaysNight
+            // 
+            this.label3DaysNight.AutoSize = true;
+            this.label3DaysNight.BackColor = System.Drawing.Color.Transparent;
+            this.label3DaysNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3DaysNight.Location = new System.Drawing.Point(154, 215);
+            this.label3DaysNight.Name = "label3DaysNight";
+            this.label3DaysNight.Size = new System.Drawing.Size(60, 16);
+            this.label3DaysNight.TabIndex = 25;
+            this.label3DaysNight.Text = "At night : ";
+            // 
+            // label3DaysDay
+            // 
+            this.label3DaysDay.AutoSize = true;
+            this.label3DaysDay.BackColor = System.Drawing.Color.Transparent;
+            this.label3DaysDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3DaysDay.Location = new System.Drawing.Point(154, 193);
+            this.label3DaysDay.Name = "label3DaysDay";
+            this.label3DaysDay.Size = new System.Drawing.Size(55, 16);
+            this.label3DaysDay.TabIndex = 24;
+            this.label3DaysDay.Text = "At day : ";
+            // 
+            // label2DaysNight
+            // 
+            this.label2DaysNight.AutoSize = true;
+            this.label2DaysNight.BackColor = System.Drawing.Color.Transparent;
+            this.label2DaysNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2DaysNight.Location = new System.Drawing.Point(154, 124);
+            this.label2DaysNight.Name = "label2DaysNight";
+            this.label2DaysNight.Size = new System.Drawing.Size(60, 16);
+            this.label2DaysNight.TabIndex = 23;
+            this.label2DaysNight.Text = "At night : ";
+            // 
+            // label2DaysDay
+            // 
+            this.label2DaysDay.AutoSize = true;
+            this.label2DaysDay.BackColor = System.Drawing.Color.Transparent;
+            this.label2DaysDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2DaysDay.Location = new System.Drawing.Point(154, 102);
+            this.label2DaysDay.Name = "label2DaysDay";
+            this.label2DaysDay.Size = new System.Drawing.Size(55, 16);
+            this.label2DaysDay.TabIndex = 22;
+            this.label2DaysDay.Text = "At day : ";
+            // 
+            // labelTomorrowTempDay
+            // 
+            this.labelTomorrowTempDay.AutoSize = true;
+            this.labelTomorrowTempDay.BackColor = System.Drawing.Color.Transparent;
+            this.labelTomorrowTempDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelTomorrowTempDay.Location = new System.Drawing.Point(220, 3);
+            this.labelTomorrowTempDay.Name = "labelTomorrowTempDay";
+            this.labelTomorrowTempDay.Size = new System.Drawing.Size(27, 16);
+            this.labelTomorrowTempDay.TabIndex = 21;
+            this.labelTomorrowTempDay.Text = "0\'C";
+            // 
+            // labelTomorrowNight
+            // 
+            this.labelTomorrowNight.AutoSize = true;
+            this.labelTomorrowNight.BackColor = System.Drawing.Color.Transparent;
+            this.labelTomorrowNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelTomorrowNight.Location = new System.Drawing.Point(154, 25);
+            this.labelTomorrowNight.Name = "labelTomorrowNight";
+            this.labelTomorrowNight.Size = new System.Drawing.Size(60, 16);
+            this.labelTomorrowNight.TabIndex = 18;
+            this.labelTomorrowNight.Text = "At night : ";
+            // 
+            // label3Days
+            // 
+            this.label3Days.AutoSize = true;
+            this.label3Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3Days.Location = new System.Drawing.Point(1, 215);
+            this.label3Days.Name = "label3Days";
+            this.label3Days.Size = new System.Drawing.Size(81, 16);
+            this.label3Days.TabIndex = 17;
+            this.label3Days.Text = "For 3 days";
+            // 
+            // label2Days
+            // 
+            this.label2Days.AutoSize = true;
+            this.label2Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2Days.Location = new System.Drawing.Point(1, 125);
+            this.label2Days.Name = "label2Days";
+            this.label2Days.Size = new System.Drawing.Size(81, 16);
+            this.label2Days.TabIndex = 16;
+            this.label2Days.Text = "For 2 days";
+            // 
+            // labelTomorrow
+            // 
+            this.labelTomorrow.AutoSize = true;
+            this.labelTomorrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelTomorrow.Location = new System.Drawing.Point(1, 25);
+            this.labelTomorrow.Name = "labelTomorrow";
+            this.labelTomorrow.Size = new System.Drawing.Size(77, 16);
+            this.labelTomorrow.TabIndex = 15;
+            this.labelTomorrow.Text = "Tomorrow";
             // 
             // labelTomorrowTempNight
             // 
@@ -214,56 +371,15 @@
             this.textBox1.Size = new System.Drawing.Size(193, 20);
             this.textBox1.TabIndex = 8;
             // 
-            // button1
+            // buttonCheck
             // 
-            this.button1.Location = new System.Drawing.Point(332, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 20);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // labelTomorrow
-            // 
-            this.labelTomorrow.AutoSize = true;
-            this.labelTomorrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelTomorrow.Location = new System.Drawing.Point(1, 25);
-            this.labelTomorrow.Name = "labelTomorrow";
-            this.labelTomorrow.Size = new System.Drawing.Size(77, 16);
-            this.labelTomorrow.TabIndex = 15;
-            this.labelTomorrow.Text = "Tomorrow";
-            // 
-            // label2Days
-            // 
-            this.label2Days.AutoSize = true;
-            this.label2Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2Days.Location = new System.Drawing.Point(1, 125);
-            this.label2Days.Name = "label2Days";
-            this.label2Days.Size = new System.Drawing.Size(81, 16);
-            this.label2Days.TabIndex = 16;
-            this.label2Days.Text = "For 2 days";
-            // 
-            // label3Days
-            // 
-            this.label3Days.AutoSize = true;
-            this.label3Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3Days.Location = new System.Drawing.Point(1, 219);
-            this.label3Days.Name = "label3Days";
-            this.label3Days.Size = new System.Drawing.Size(81, 16);
-            this.label3Days.TabIndex = 17;
-            this.label3Days.Text = "For 3 days";
-            // 
-            // labelTomorrowNight
-            // 
-            this.labelTomorrowNight.AutoSize = true;
-            this.labelTomorrowNight.BackColor = System.Drawing.Color.Transparent;
-            this.labelTomorrowNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelTomorrowNight.Location = new System.Drawing.Point(154, 25);
-            this.labelTomorrowNight.Name = "labelTomorrowNight";
-            this.labelTomorrowNight.Size = new System.Drawing.Size(60, 16);
-            this.labelTomorrowNight.TabIndex = 18;
-            this.labelTomorrowNight.Text = "At night : ";
+            this.buttonCheck.Location = new System.Drawing.Point(332, 27);
+            this.buttonCheck.Name = "buttonCheck";
+            this.buttonCheck.Size = new System.Drawing.Size(190, 20);
+            this.buttonCheck.TabIndex = 9;
+            this.buttonCheck.Text = "Check";
+            this.buttonCheck.UseVisualStyleBackColor = true;
+            this.buttonCheck.Click += new System.EventHandler(this.ButtonCheck_Click);
             // 
             // labelTodayTempDay
             // 
@@ -287,16 +403,16 @@
             this.labelTodayDay.TabIndex = 20;
             this.labelTodayDay.Text = "At day : ";
             // 
-            // labelTomorrowTempDay
+            // labelDate
             // 
-            this.labelTomorrowTempDay.AutoSize = true;
-            this.labelTomorrowTempDay.BackColor = System.Drawing.Color.Transparent;
-            this.labelTomorrowTempDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelTomorrowTempDay.Location = new System.Drawing.Point(220, 3);
-            this.labelTomorrowTempDay.Name = "labelTomorrowTempDay";
-            this.labelTomorrowTempDay.Size = new System.Drawing.Size(27, 16);
-            this.labelTomorrowTempDay.TabIndex = 21;
-            this.labelTomorrowTempDay.Text = "0\'C";
+            this.labelDate.AutoSize = true;
+            this.labelDate.BackColor = System.Drawing.Color.Transparent;
+            this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelDate.Location = new System.Drawing.Point(329, 168);
+            this.labelDate.Name = "labelDate";
+            this.labelDate.Size = new System.Drawing.Size(37, 16);
+            this.labelDate.TabIndex = 21;
+            this.labelDate.Text = "Date";
             // 
             // FormMain
             // 
@@ -305,9 +421,10 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::WeatherApp.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(534, 511);
+            this.Controls.Add(this.labelDate);
             this.Controls.Add(this.labelTodayTempDay);
             this.Controls.Add(this.labelTodayDay);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonCheck);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.labelTodayTempNight);
@@ -350,7 +467,7 @@
         private System.Windows.Forms.Label labelTomorrowTempNight;
         private System.Windows.Forms.Label labelTomorrowDay;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCheck;
         private System.Windows.Forms.Label labelTodayTempDay;
         private System.Windows.Forms.Label labelTomorrowNight;
         private System.Windows.Forms.Label label3Days;
@@ -358,6 +475,15 @@
         private System.Windows.Forms.Label labelTomorrow;
         private System.Windows.Forms.Label labelTomorrowTempDay;
         private System.Windows.Forms.Label labelTodayDay;
+        private System.Windows.Forms.Label label3DaysTempDay;
+        private System.Windows.Forms.Label label3DaysTempNight;
+        private System.Windows.Forms.Label label2DaysTempDay;
+        private System.Windows.Forms.Label label2DaysTempNight;
+        private System.Windows.Forms.Label label3DaysNight;
+        private System.Windows.Forms.Label label3DaysDay;
+        private System.Windows.Forms.Label label2DaysNight;
+        private System.Windows.Forms.Label label2DaysDay;
+        private System.Windows.Forms.Label labelDate;
     }
 }
 

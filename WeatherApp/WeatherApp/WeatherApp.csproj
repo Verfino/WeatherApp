@@ -90,34 +90,19 @@
     <None Include="Resources\background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sunny.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sunny.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sunny1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sun1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sun2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\clouds.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rain.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\snowflake.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\sun.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

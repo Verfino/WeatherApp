@@ -14,7 +14,7 @@ namespace WeatherApp
 
         public int Code { get; set; }
 
-        public DateTime date { get; set; }
+        public DateTime Date { get; set; }
 
         public List<Forecast> Forecast;
 

@@ -103,9 +103,9 @@ namespace WeatherApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap snowflake {
+        internal static System.Drawing.Bitmap snow {
             get {
-                object obj = ResourceManager.GetObject("snowflake", resourceCulture);
+                object obj = ResourceManager.GetObject("snow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
